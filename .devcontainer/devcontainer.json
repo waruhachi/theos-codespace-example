@@ -1,0 +1,7 @@
+{
+	"name": "theos-codespace",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"features": {
+		"ghcr.io/waruhachi/features/theos:1.0.6": {}
+	}
+}
