@@ -57,7 +57,7 @@ jobs:
               id: metadata
               shell: bash
               run: |
-                for pkg in packages/*_iphoneos-arm.deb; do
+                for pkg in packages/**/_iphoneos-arm.deb; do
                   if [ -f "$pkg" ]; then
                     echo "### Rootful (iphoneos-arm)" >> release_body.md
                     echo "* MD5: $(md5 -q $pkg)" >> release_body.md
@@ -67,7 +67,7 @@ jobs:
                   fi
                 done
 
-                for pkg in packages/*_iphoneos-arm64.deb; do
+                for pkg in packages/**/*_iphoneos-arm64.deb; do
                   if [ -f "$pkg" ]; then
                     echo "### Rootless (iphoneos-arm64)" >> release_body.md
                     echo "* MD5: $(md5 -q $pkg)" >> release_body.md
@@ -77,7 +77,7 @@ jobs:
                   fi
                 done
 
-                for pkg in packages/*_iphoneos-arm64e.deb; do
+                for pkg in packages/**/*_iphoneos-arm64e.deb; do
                   if [ -f "$pkg" ]; then
                     echo "### RootHide (iphoneos-arm64e)" >> release_body.md
                     echo "* MD5: $(md5 -q $pkg)" >> release_body.md
@@ -93,7 +93,7 @@ jobs:
               with:
                 tag_name: ${{ github.event.release.tag_name }}
                 body_path: release_body.md
-                files: packages/*.deb
+                files: packages/**/*.deb
                 append_body: true
 
             - name: Delete build artifacts
