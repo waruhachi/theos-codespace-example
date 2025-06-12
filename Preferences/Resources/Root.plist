@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+        <dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>1. Enable the Tweak: Activate the tweak in your settings.
+2. Enter a Reasonable iOS Version: Input a plausible iOS version. (Note: Entering an unrealistic version may cause the app to crash after download.)
+3. Tap Apply: Confirm your changes by tapping the "Apply" button.
+4. Purchase the App: Proceed to purchase the app. (It will successfully purchase, but the installation may fail.)
+5. Disable the Tweak: After the purchase, turn off the tweak.
+6. Install the Last Compatible Version: If available, download and install the last compatible version of the app.
+
+Disclaimer: Enabling the update option may result in your device displaying an excessive number of updates, depending on the version you spoofed.</string>
+			<key>headerText</key>
+			<string>AppStore Troller</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>defaults</key>
+			<string>dev.mineek.appstoretroller.preferences</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+			<key>default</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>defaults</key>
+			<string>dev.mineek.appstoretroller.preferences</string>
+			<key>key</key>
+			<string>updatesEnabled</string>
+			<key>label</key>
+			<string>Enabled for Updates (DISCLAIMER)</string>
+			<key>default</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>key</key>
+			<string>iOSVersion</string>
+			<key>label</key>
+			<string>iOS Version to Spoof</string>
+			<key>defaults</key>
+			<string>dev.mineek.appstoretroller.preferences</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>AppStore Troller</string>
+</dict>
+</plist>

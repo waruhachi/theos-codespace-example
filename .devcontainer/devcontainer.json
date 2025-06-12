@@ -2,6 +2,17 @@
 	"name": "theos-codespace",
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"features": {
-		"ghcr.io/waruhachi/features/theos:1.0.6": {}
-	}
+        "ghcr.io/waruhachi/features/swift:latest": {},
+		"ghcr.io/waruhachi/features/theos:latest": {},
+        "ghcr.io/waruhachi/features/libplist:latest": {},
+        "ghcr.io/waruhachi/features/libgcuniversal:latest": {},
+        "ghcr.io/waruhachi/features/comet:latest": {}
+	},
+    "overrideFeatureInstallOrder": [
+        "ghcr.io/waruhachi/features/swift",
+        "ghcr.io/waruhachi/features/theos",
+        "ghcr.io/waruhachi/features/libplist",
+        "ghcr.io/waruhachi/features/libgcuniversal",
+        "ghcr.io/waruhachi/features/comet"
+    ]
 }
