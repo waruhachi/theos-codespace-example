@@ -3,15 +3,6 @@
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"features": {
 		"ghcr.io/waruhachi/features/theos:latest": {},
-        "ghcr.io/waruhachi/features/python:latest": {},
-        "ghcr.io/waruhachi/features/libplist:latest": {},
-        "ghcr.io/waruhachi/features/remotelog:latest": {}
-	},
-    "forwardPorts": [11909],
-    "portsAttributes": {
-        "11909": {
-            "label": "RemoteLog"
-        }
-    },
-    "postStartCommand": "[ -f \"$THEOS/include/RemoteLog.h\" ] && python3 \"$THEOS/rlogserver.py\" || true"
+        "ghcr.io/waruhachi/features/libplist:latest": {}
+	}
 }
