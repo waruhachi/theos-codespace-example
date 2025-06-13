@@ -43,6 +43,8 @@
 %end
 
 %ctor {
+    RLog(@"[AppStoreTroller]: Tweak Loaded");
+
     NSProcessInfo *processInfo = [NSProcessInfo processInfo];
     NSString *currentProcessName = [processInfo processName];
     NSUserDefaults *preferences = [[NSUserDefaults alloc] initWithSuiteName:@"dev.mineek.appstoretroller.preferences"];

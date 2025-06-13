@@ -1,4 +1,5 @@
 #include <roothide.h>
+#include <RemoteLog.h>
 #include <UIKit/UIKit.h>
 #include <Foundation/Foundation.h>
 
